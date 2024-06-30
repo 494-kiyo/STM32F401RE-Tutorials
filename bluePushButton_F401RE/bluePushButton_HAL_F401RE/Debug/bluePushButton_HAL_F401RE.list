@@ -363,10 +363,10 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
  80004d4:	b2da      	uxtb	r2, r3
  80004d6:	4b07      	ldr	r3, [pc, #28]	@ (80004f4 <HAL_GPIO_EXTI_Callback+0x30>)
  80004d8:	701a      	strb	r2, [r3, #0]
-	if (mode > 2) mode = 0;
+	if (mode > 1) mode = 0;
  80004da:	4b06      	ldr	r3, [pc, #24]	@ (80004f4 <HAL_GPIO_EXTI_Callback+0x30>)
  80004dc:	781b      	ldrb	r3, [r3, #0]
- 80004de:	2b02      	cmp	r3, #2
+ 80004de:	2b01      	cmp	r3, #1
  80004e0:	d902      	bls.n	80004e8 <HAL_GPIO_EXTI_Callback+0x24>
  80004e2:	4b04      	ldr	r3, [pc, #16]	@ (80004f4 <HAL_GPIO_EXTI_Callback+0x30>)
  80004e4:	2200      	movs	r2, #0

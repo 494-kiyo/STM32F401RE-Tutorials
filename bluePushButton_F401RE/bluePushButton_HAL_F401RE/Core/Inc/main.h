@@ -51,6 +51,7 @@ extern "C" {
 
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
+void LL_GPIO_EXTI_Callback(void);
 
 /* USER CODE BEGIN EFP */
 
